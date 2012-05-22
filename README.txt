@@ -3,7 +3,7 @@ Contributors: roeesa, ramiy
 Tags: plugins, widgets, treato, health
 Requires at least: 3.0
 Tested up to: 3.3.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Treato travels around the Web to collect and analyze patient written forum and blog posts. The plugin gives access to this new aggregated information.
 
