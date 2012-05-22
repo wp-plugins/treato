@@ -15,6 +15,7 @@ With over 1 Billion collected posts, our users receive insight about effectivene
 The widget's size is 300x350 pixels, it can fit in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels too.
 
 Visit Treato at http://treato.com to learn more about what this plugin can give you.
+You can also see it live on our blog: http://treato.com/blog/
 
 http://www.youtube.com/watch?v=8rEXhLXfOWM
 
