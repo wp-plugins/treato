@@ -1,6 +1,6 @@
 === Treato WordPress Plugin ===
 Contributors: roeesa, ramiy
-Tags: plugins, widgets, treato, health, UGC, posts
+Tags: plugins, widgets, treato, health, UGC, posts, sidebar
 Requires at least: 3.0
 Tested up to: 3.3.2
 Stable tag: 1.0.3
