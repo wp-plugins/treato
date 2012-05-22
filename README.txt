@@ -12,6 +12,10 @@ Treato travels around the Web to collect and analyze patient written forum and b
 Treato travels around the Web to collect and analyze patient written forum and blog posts. Our semantic technology analyzes posts in a way to help our users understand more about the medications they are taking and the diseases and symptoms they're experiencing - all from patient experiences.
 With over 1 Billion collected posts, our users receive insight about effectiveness, side effects, drug comparisons and much more. 
 
+The widget’s size is 300x350 pixels, it can fit in most sidebars, and we are working on fitting it into narrower sidebars too.
+
+Visit Treato at http://treato.com to learn more about what this plugin can give you.
+
 http://www.youtube.com/watch?v=8rEXhLXfOWM
 
 == Installation ==
