@@ -10,7 +10,7 @@ Treato travels around the Web to collect and analyze patient written forum and b
 
 == Description ==
 
-Treato travels around the Web to collect and analyze patient written forum and blog posts. Our semantic technology analyzes posts in a way to help our users understand more about the medications they are taking and the diseases and symptoms they’re experiencing – all from patient experiences.
+Treato travels around the Web to collect and analyze patient written forum and blog posts. Our semantic technology analyzes posts in a way to help our users understand more about the medications they are taking and the diseases and symptoms they're experiencing - all from patient experiences.
 With over 1 Billion collected posts, our users receive insight about effectiveness, side effects, drug comparisons and much more. 
 
 http://www.youtube.com/watch?v=8rEXhLXfOWM
