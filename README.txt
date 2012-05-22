@@ -28,7 +28,8 @@ http://www.youtube.com/watch?v=8rEXhLXfOWM
 
 == Changelog ==
 
+= 1.0.2 (05.22.2012) =
+* texts updates before stable release
+
 = 1.0 (05.18.2012) =
 * Initial release
-= 1.0.2 (05.22.2012)
-* texts updates before stable release
