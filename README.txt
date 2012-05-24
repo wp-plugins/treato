@@ -5,7 +5,7 @@ Requires at least: 3.0
 Tested up to: 3.3.2
 Stable tag: 1.0.3
 
-Treato provides usable healthcare insights by collecting and analyzing patient experiences written in forums and blog posts. This plugin provides a snapshot of Treato search results, with links to full posts.
+A snapshot of the Treato healthcare search engine: usable insights from aggregated patient experiences written in forums and blog posts. 
 
 == Description ==
 
