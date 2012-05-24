@@ -5,17 +5,16 @@ Requires at least: 3.0
 Tested up to: 3.3.2
 Stable tag: 1.0.3
 
-Treato travels around the Web to collect and analyze patient written forum and blog posts. The plugin gives access to this new aggregated information.
+Treato provides usable healthcare insights by collecting and analyzing patient experiences written in forums and blog posts. This plugin provides a snapshot of Treato search results, with links to full posts.
 
 == Description ==
 
-Treato travels around the Web to collect and analyze patient written forum and blog posts. Our semantic technology analyzes posts in a way to help our users understand more about the medications they are taking and the diseases and symptoms they're experiencing - all from patient experiences.
-With over 1 Billion collected posts, our users receive insight about effectiveness, side effects, drug comparisons and much more. 
+Treato travels around the Web to collect and analyze patient experiences written in forums and blog posts. Our patented semantic technology aggregates the posts to generate useful insights about users' medications, diseases and symptoms - all from other patients.
+With over 1 Billion collected posts, our users receive insight about side effects, drug comparisons, which drugs people feel work, and much more.
 
-The widget's size is 300x350 pixels, it can fit in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels too.
+The widget is 300x350 pixels, which fits in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels, too.
 
-Visit Treato at http://treato.com to learn more about what this plugin can give you.
-You can also see it live on our blog: http://treato.com/blog/
+Visit Treato at http://treato.com to learn more about what this plugin can provide you. You can also see it live on our blog: http://treato.com/blog/.
 
 http://www.youtube.com/watch?v=8rEXhLXfOWM
 
