@@ -158,12 +158,12 @@ class Treato extends WP_Widget {
 	 */
 	private function register_scripts_and_styles() {
 		if(is_admin()) {
-			$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/admin.js', true);
+			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/admin.js', true);
 			$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/admin.css', false);
 		} else { 
-			$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/widget.js', true);
-			$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/widget.css', false);
-		} // end if/else
+			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/widget.js', true);
+			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/widget.css', false);
+		}
 	} // end register_scripts_and_styles
 	
 	/**

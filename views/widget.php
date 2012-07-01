@@ -18,6 +18,7 @@
 
 <?php
 	if ( $treato_poweredby == true ) {
+		echo '<br />';
 		_e( 'Powered by <a href="http://treato.com/">Treato.com</a>', treato );
 	}
 ?>
