@@ -3,7 +3,7 @@ Contributors: roeesa, ramiy
 Tags: plugins, widgets, treato, health, UGC, posts, sidebar, drugs, diseases, medications, patients, medical
 Requires at least: 3.0
 Tested up to: 3.3.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 
 A snapshot of the Treato healthcare search engine: usable insights from aggregated patient experiences written in forums and blog posts. 
 
@@ -28,9 +28,14 @@ http://www.youtube.com/watch?v=8rEXhLXfOWM
 == Screenshots ==
 
 1. Treato widget sittings.
-3. Treato searchbox on the sidebar.
+2. Treato searchbox on the sidebar.
 
 == Changelog ==
+
+= 1.0.4 (07.02.2012) =
+* removed unneeded JS
+* added BR before Powered By to place in newline in wider sidebars
+* deleted plugin.mo
 
 = 1.0.3 (05.22.2012) =
 * fixed internal issue with SVN
