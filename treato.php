@@ -3,7 +3,7 @@
 Plugin Name: Treato WordPress Plugin
 Plugin URI: http://treato.com/
 Description: Treato travels around the Web to collect and analyze patient written forum and blog posts. The plugin gives access to this new aggregated information.
-Version: 1.0.3
+Version: 1.0.5
 Author: Treato
 Author URI: http://treato.com/
 Author Email: roee@treato.com
@@ -49,9 +49,9 @@ class Treato extends WP_Widget {
 	 * @args			The array of form elements
 	 * @instance
 	 */
-	function widget($args, $instance) {
+	function widget( $args, $instance ) {
 		
-		extract($args, EXTR_SKIP);
+		extract( $args, EXTR_SKIP );
 		
 		echo $before_widget;
 		
@@ -61,7 +61,7 @@ class Treato extends WP_Widget {
 		$treato_poweredby = empty($instance['treato_poweredby']) ? '' : apply_filters('treato_poweredby', $instance['treato_poweredby']);
 		
 		// Display the widget
-		include(WP_PLUGIN_DIR . '/' . PLUGIN_SLUG . '/views/widget.php');
+		include( WP_PLUGIN_DIR . '/' . PLUGIN_SLUG . '/views/widget.php' );
 		
 		echo $after_widget;
 		
@@ -73,7 +73,7 @@ class Treato extends WP_Widget {
 	 * @new_instance	The previous instance of values before the update.
 	 * @old_instance	The new instance of values to be generated via the update.
 	 */
-	function update($new_instance, $old_instance) {
+	function update( $new_instance, $old_instance ) {
 		
 		$instance = $old_instance;
 		
@@ -91,7 +91,7 @@ class Treato extends WP_Widget {
 	 *
 	 * @instance	The array of keys and values for the widget.
 	 */
-	function form($instance) {
+	function form( $instance ) {
 		
 		$instance = wp_parse_args(
 			(array)$instance,
@@ -127,16 +127,16 @@ class Treato extends WP_Widget {
 		* This provides the unique identifier for your plugin used in
 		 * localizing the strings used throughout.
 		 */
-		if(!defined('PLUGIN_LOCALE')) {
-			define('PLUGIN_LOCALE', 'treato');
+		if(!defined( 'PLUGIN_LOCALE' )) {
+			define( 'PLUGIN_LOCALE', 'treato' );
 		} // end if
 		
 		/**
 		 * Define this as the name of your plugin. This is what shows
 		 * in the Widgets area of WordPress.
 		 */
-		if(!defined('PLUGIN_NAME')) {
-			define('PLUGIN_NAME', 'Treato');
+		if(!defined( 'PLUGIN_NAME' )) {
+			define( 'PLUGIN_NAME', 'Treato' );
 		} // end if
 		
 		/**
@@ -146,8 +146,8 @@ class Treato extends WP_Widget {
 		 * This should also be the directory in which your plugin
 		 * resides. Use hyphens.
 		 */
-		if(!defined('PLUGIN_SLUG')) {
-			define('PLUGIN_SLUG', 'treato');
+		if(!defined( 'PLUGIN_SLUG' )) {
+			define( 'PLUGIN_SLUG', 'treato' );
 		} // end if
 		
 	} // end init_plugin_constants
@@ -158,11 +158,11 @@ class Treato extends WP_Widget {
 	 */
 	private function register_scripts_and_styles() {
 		if(is_admin()) {
-			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/admin.js', true);
-			$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/admin.css', false);
+			//$this->load_file( PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/admin.js', true );
+			$this->load_file( PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/admin.css', false );
 		} else { 
-			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/widget.js', true);
-			//$this->load_file(PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/widget.css', false);
+			//$this->load_file( PLUGIN_NAME, '/' . PLUGIN_SLUG . '/js/widget.js', true );
+			//$this->load_file( PLUGIN_NAME, '/' . PLUGIN_SLUG . '/css/widget.css', false );
 		}
 	} // end register_scripts_and_styles
 	
@@ -173,23 +173,60 @@ class Treato extends WP_Widget {
 	 * @file_path		The path to the actual file
 	 * @is_script		Optional argument for if the incoming file_path is a JavaScript source file.
 	 */
-	private function load_file($name, $file_path, $is_script = false) {
+	private function load_file( $name, $file_path, $is_script = false ) {
 		
 		$url = WP_PLUGIN_URL . $file_path;
 		$file = WP_PLUGIN_DIR . $file_path;
 		
-		if(file_exists($file)) {
-			if($is_script) {
-				wp_register_script($name, $url);
-				wp_enqueue_script($name);
+		if( file_exists( $file ) ) {
+			if( $is_script ) {
+				wp_register_script( $name, $url );
+				wp_enqueue_script( $name );
 			} else {
-				wp_register_style($name, $url);
-				wp_enqueue_style($name);
+				wp_register_style( $name, $url );
+				wp_enqueue_style( $name );
 			} // end if
 		} // end if
 		
 	} // end load_file
 	
 } // end class
-add_action('widgets_init', create_function('', 'register_widget("Treato");'));
+add_action( 'widgets_init', create_function( '', 'register_widget("Treato");' ));
+
+
+/**
+ * Registers activation hook for the plugin.
+ */
+function treato_activate() {
+	$to = 'roee@treato.com';
+	$subject = 'Treato plugin activation';
+	$message = home_url();
+	mail( $to, $subject, $message ); 
+}
+register_activation_hook( __FILE__, 'treato_activate' );
+
+
+/**
+ * Registers deactivation hook for the plugin.
+ */
+function treato_deactivate() {
+	$to = 'roee@treato.com';
+	$subject = 'Treato plugin deactivation';
+	$message = home_url();
+	mail( $to, $subject, $message ); 
+}
+register_deactivation_hook( __FILE__, 'treato_deactivate' );
+
+
+/**
+ * Registers uninstall hook for the plugin.
+ */
+function treato_uninstall() {
+	$to = 'roee@treato.com';
+	$subject = 'Treato plugin uninstall';
+	$message = home_url();
+	mail( $to, $subject, $message ); 
+}
+register_uninstall_hook( __FILE__, 'treato_uninstall' );
+
 ?>
