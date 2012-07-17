@@ -194,14 +194,27 @@ class Treato extends WP_Widget {
 add_action( 'widgets_init', create_function( '', 'register_widget("Treato");' ));
 
 
+
+/**
+ * Server Ping for stats purpose.
+ */
+function ping( $host ) {
+	exec(sprintf('ping -c 1 -W 5 %s', escapeshellarg($host)), $res, $rval);
+	return $rval === 0;
+}
+
+
 /**
  * Registers activation hook for the plugin.
  */
 function treato_activate() {
+	// Send mail
 	$to = 'roee@treato.com';
-	$subject = 'Treato plugin activation';
+	$subject = 'Treato WordPress Plugin Activation';
 	$message = home_url();
-	mail( $to, $subject, $message ); 
+	mail( $to, $subject, $message );
+	// Ping server
+	$ping = ping( 'http://treato.com/widgets/general/wordpress/?action=activate&site=' . home_url() );
 }
 register_activation_hook( __FILE__, 'treato_activate' );
 
@@ -210,10 +223,13 @@ register_activation_hook( __FILE__, 'treato_activate' );
  * Registers deactivation hook for the plugin.
  */
 function treato_deactivate() {
+	// Send mail
 	$to = 'roee@treato.com';
-	$subject = 'Treato plugin deactivation';
+	$subject = 'Treato WordPress Plugin Deactivation';
 	$message = home_url();
 	mail( $to, $subject, $message ); 
+	// Ping server
+	$ping = ping( 'http://treato.com/widgets/general/wordpress/?action=deactivation&site=' . home_url() );
 }
 register_deactivation_hook( __FILE__, 'treato_deactivate' );
 
@@ -222,10 +238,13 @@ register_deactivation_hook( __FILE__, 'treato_deactivate' );
  * Registers uninstall hook for the plugin.
  */
 function treato_uninstall() {
+	// Send mail
 	$to = 'roee@treato.com';
-	$subject = 'Treato plugin uninstall';
+	$subject = 'Treato WordPress Plugin Uninstall';
 	$message = home_url();
 	mail( $to, $subject, $message ); 
+	// Ping server
+	$ping = ping( 'http://treato.com/widgets/general/wordpress/?action=uninstall&site=' . home_url() );
 }
 register_uninstall_hook( __FILE__, 'treato_uninstall' );
 
