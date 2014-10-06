@@ -3,9 +3,9 @@ Contributors: roeesa, ramiy
 Tags: plugins, widgets, treato, health, UGC, posts, sidebar, drugs, diseases, medications, patients, medical
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 
-A snapshot of the Treato healthcare search engine: usable insights from aggregated patient experiences written in forums and blog posts. 
+A snapshot of the Treato healthcare search engine: usable insights from aggregated patient experiences written in forums and blog posts.
 
 == Description ==
 
@@ -20,10 +20,23 @@ http://www.youtube.com/watch?v=8rEXhLXfOWM
 
 == Installation ==
 
-1. Upload the plugin to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Navigate to Appearance > Widgets
-4. Drop the widget on your sidebar.
+= Minimum Requirements =
+
+* WordPress 3.0 or greater
+* PHP version 5.2.4 or greater
+* MySQL version 5.0 or greater
+
+= Installation =
+
+1. In your WordPress Dashboard go to "Plugins" -> "Add Plugin".
+2. Search for "Treato".
+3. Install Treato plugin by pressing the plugin "Install" button.
+4. Activate the Treato plugin.
+5. Navigate to Appearance > Widgets
+6. Drop the widget on your sidebar.
+
+= Updating =
+* Use WordPress automatic updates to upgrade to the latest version. Ensure to backup your site just in case.
 
 == Screenshots ==
 
@@ -31,6 +44,9 @@ http://www.youtube.com/watch?v=8rEXhLXfOWM
 2. Treato searchbox on the sidebar.
 
 == Changelog ==
+
+= 1.0.7 =
+* Tested up to WordPress 4.0
 
 = 1.0.6 =
 * Remove activation/deactivation/uninstall hooks.
