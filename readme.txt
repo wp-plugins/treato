@@ -11,34 +11,38 @@ A snapshot of the Treato healthcare search engine: usable insights from aggregat
 
 == Description ==
 
-Treato travels around the Web to collect and analyze patient experiences written in forums and blog posts. Our patented semantic technology aggregates the posts to generate useful insights about users' medications, diseases and symptoms - all from other patients.
+[Treato](http://treato.com) travels around the Web to collect and analyze patient experiences written in forums and blog posts. Our patented semantic technology aggregates the posts to generate useful insights about users' medications, diseases and symptoms - all from other patients.
 With over 1 Billion collected posts, our users receive insight about side effects, drug comparisons, which drugs people feel work, and much more.
 
-The widget is 300x350 pixels, which fits in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels, too.
+The WordPress widget is 300x350 pixels, which fits in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels, too.
 
-Visit Treato at http://treato.com to learn more about what this plugin can provide you. You can also see it live on our blog: http://treato.com/blog/.
+Visit [Treato.com](http://treato.com) to learn more about what this plugin can provide you. You can also see it live on our [blog](http://treato.com/blog/).
 
 http://www.youtube.com/watch?v=8rEXhLXfOWM
 
 == Installation ==
 
-= Minimum Requirements =
-
-* WordPress 3.0 or greater
-* PHP version 5.2.4 or greater
-* MySQL version 5.0 or greater
-
 = Installation =
 
 1. In your WordPress Dashboard go to "Plugins" -> "Add Plugin".
 2. Search for "Treato".
-3. Install Treato plugin by pressing the plugin "Install" button.
-4. Activate the Treato plugin.
-5. Navigate to Appearance > Widgets
+3. Install the plugin by pressing the "Install" button.
+4. Activate the plugin by pressing the "Activate" button.
+5. Navigate to "Appearance" -> "Widgets"
 6. Drop the widget on your sidebar.
 
 = Updating =
 * Use WordPress automatic updates to upgrade to the latest version. Ensure to backup your site just in case.
+
+= Minimum Requirements =
+* WordPress version 3.0 or greater.
+* PHP version 5.2.4 or greater.
+* MySQL version 5.0 or greater.
+
+= Recommended  Requirements =
+* The latest WordPress version.
+* PHP version 5.4 or greater.
+* MySQL version 5.5 or greater.
 
 == Screenshots ==
 
