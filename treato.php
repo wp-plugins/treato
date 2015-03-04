@@ -6,7 +6,8 @@ Description: Treato travels around the Web to collect and analyze patient writte
 Version: 1.0.7
 Author: Treato
 Author URI: http://treato.com/
-Author Email: roee@treato.com
+Text Domain: treato
+Domain Path: /lang
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
