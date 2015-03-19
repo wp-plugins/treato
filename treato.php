@@ -2,8 +2,8 @@
 /*
 Plugin Name: Treato WordPress Plugin
 Plugin URI: http://treato.com/
-Description: Treato travels around the Web to collect and analyze patient written forum and blog posts. The plugin gives access to this new aggregated information.
-Version: 1.0.7
+Description: Treato travels around the web to collect and analyze patient written forum and blog posts. The plugin gives access to this new aggregated information.
+Version: 1.0.8
 Author: Treato
 Author URI: http://treato.com/
 Text Domain: treato

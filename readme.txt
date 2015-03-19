@@ -3,7 +3,7 @@ Contributors: roeesa, ramiy
 Tags: plugins, widgets, treato, health, UGC, posts, sidebar, drugs, diseases, medications, patients, medical
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,10 +11,10 @@ A snapshot of the Treato healthcare search engine: usable insights from aggregat
 
 == Description ==
 
-[Treato](http://treato.com) travels around the Web to collect and analyze patient experiences written in forums and blog posts. Our patented semantic technology aggregates the posts to generate useful insights about users' medications, diseases and symptoms - all from other patients.
+[Treato](http://treato.com) travels around the web to collect and analyze patient experiences written in forums and blog posts. Our patented semantic technology aggregates the posts to generate useful insights about users' medications, diseases and symptoms - all from other patients.
 With over 1 Billion collected posts, our users receive insight about side effects, drug comparisons, which drugs people feel work, and much more.
 
-The WordPress widget is 300x350 pixels, which fits in most sidebars, and we are working on fitting it into sidebars narrower than 300 pixels, too.
+With this plugin you can add a sidebar widget which allows you and your users to search drugs see what patients are saying about different drugs.
 
 Visit [Treato.com](http://treato.com) to learn more about what this plugin can provide you. You can also see it live on our [blog](http://treato.com/blog/).
 
@@ -44,12 +44,21 @@ http://www.youtube.com/watch?v=8rEXhLXfOWM
 * PHP version 5.4 or greater.
 * MySQL version 5.5 or greater.
 
+== Frequently Asked Questions ==
+
+= What are the widget proportions on the sidebar? =
+
+Treato sidebar widget is 300x350 pixels, which fits in most sidebars. We are working on fitting it into sidebars narrower than 300 pixels.
+
 == Screenshots ==
 
 1. Treato widget sittings.
 2. Treato searchbox on the sidebar.
 
 == Changelog ==
+
+= 1.0.8 (03.19.2015) =
+* Update language packs and hebrew translation.
 
 = 1.0.7 =
 * Tested up to WordPress 4.0
